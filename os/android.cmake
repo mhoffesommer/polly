@@ -28,6 +28,7 @@ endif()
 set(ANDROID_API_LEVEL "${ANDROID_NATIVE_API_LEVEL}") # Need for Api.cmake module
 option(ANDROID_FORCE_COMPILERS "" OFF)
 include("${CMAKE_CURRENT_LIST_DIR}/android.toolchain.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/android.apk.cmake")
 
 # Toolchain can "adjust" API level silently
 string(
